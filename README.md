@@ -1,58 +1,130 @@
-﻿# Project Timeline And Task Dashboard
+# DeliveryPulse Project Risk And Resource Planner
 
-## Overview
+DeliveryPulse is a clean project delivery workspace for monitoring project progress, deadlines, team ownership, delivery risk, resource capacity, blockers, and stakeholder-ready updates.
 
-Project Timeline And Task Dashboard is a browser-based project management dashboard built from a website redesign timeline and task plan.
+This project upgrades the original static timeline dashboard into a multi-page internal planning application with a React frontend, Express API, JSON-backed project data, risk scoring logic, resource planning views, and role-based workspace pages.
 
-This project is positioned as a recruiter-ready frontend portfolio piece. It transforms a static Gantt chart and task schedule into an interactive dashboard that presents project phases, ownership, progress, and task timing in a cleaner and more accessible way.
+## What It Does
 
-## Real-World Business Use Case
+DeliveryPulse helps a company answer practical delivery questions:
 
-This project maps to practical project management and operations workflows used by:
+- Which projects are on track?
+- Which projects are slipping?
+- Who owns each project?
+- What is blocking delivery?
+- Which teams are overloaded?
+- What actions should project leads or executives take next?
 
-- Project Coordinators
-- Operations Teams
-- Delivery Managers
-- Frontend Developers Building Internal Tools
-- Teams Tracking Multi-Phase Project Progress
+## Core Features
 
-A team may need to answer questions such as:
-
-- What phase is the project currently in?
-- Which tasks are assigned to which team members?
-- How much progress has been made on each task?
-- How can a static project plan be presented more clearly in the browser?
-
-This dashboard is useful for project reporting, stakeholder communication, and portfolio demonstration of turning static documentation into a frontend experience.
-
-## Key Features
-
-- Browser-Based Project Dashboard
-- Summary Cards For Project Context
-- Phase Overview Section
-- Task Progress Table
-- Progress Bars For Task Completion
-- Clean Responsive UI
-- Lightweight Frontend-Only Setup
+- Portfolio home page showing all projects, leads, progress, risk, and end dates.
+- Individual project pages with Overview, Timeline, Tasks, Team, Risks, and Updates sections.
+- Project switcher and clear Back, Home, and navigation controls.
+- Team member workspace for assigned tasks and blockers.
+- Project lead workspace for owned projects, blocked tasks, and due-soon work.
+- Executive summary with portfolio health and recommended actions.
+- Team capacity view with workload pressure and resource recommendations.
+- Risk review page comparing schedule, dependency, resource, budget, and communication risk.
+- Scenario simulator for testing delivery improvements such as resolving blockers or extending deadlines.
+- Stakeholder update generator based on project status and risk profile.
 
 ## Tech Stack
 
-- HTML
-- CSS
+- React
+- Vite
+- Node.js
+- Express
 - JavaScript
+- JSON data layer
+- CSS custom UI system
 
-## Repository Contents
+## Project Structure
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-- `Gant Chart.pdf`
+```text
+DeliveryPulse-Project-Risk-And-Resource-Planner/
+â”œâ”€â”€ client/
+â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â”œâ”€â”€ pages/
+â”‚   â”‚   â”œâ”€â”€ App.jsx
+â”‚   â”‚   â””â”€â”€ styles.css
+â”‚   â””â”€â”€ vite.config.js
+â”œâ”€â”€ server/
+â”‚   â”œâ”€â”€ data/
+â”‚   â”œâ”€â”€ services/
+â”‚   â”œâ”€â”€ tests/
+â”‚   â””â”€â”€ index.js
+â”œâ”€â”€ screenshots/
+â”œâ”€â”€ package.json
+â””â”€â”€ README.md
+```
 
-## How To Run
+## Run Locally
 
-Open the dashboard in a browser.
+From the project root:
 
 ```powershell
-Start-Process .\index.html
+npm run install:all
+npm run dev
+```
 
+Open:
+
+```text
+http://localhost:5173
+```
+
+The API runs at:
+
+```text
+http://localhost:8080
+```
+
+## Test The Risk Engine
+
+```powershell
+npm run test
+```
+
+## Build Frontend
+
+```powershell
+npm run build
+```
+
+## Production-Style Local Run
+
+After building the client:
+
+```powershell
+npm start
+```
+
+Then open:
+
+```text
+http://localhost:8080
+```
+
+## Screenshot Checklist
+
+Recommended screenshots for the GitHub README:
+
+```text
+screenshots/portfolio-home-overview.png
+screenshots/project-detail-overview.png
+screenshots/project-task-board.png
+screenshots/project-risk-and-scenario-simulator.png
+screenshots/team-member-workspace.png
+screenshots/project-lead-workspace.png
+screenshots/team-capacity-planner.png
+screenshots/executive-summary.png
+```
+
+## Demo Data
+
+The system uses fictional project data for portfolio demonstration purposes. It includes projects across digital products, mobile operations, data platform work, AI enablement, compliance reporting, and service delivery.
+
+## Notes
+
+This is a portfolio project designed to demonstrate full-stack project planning, delivery risk modeling, resource planning, and clean business-focused UI/UX.

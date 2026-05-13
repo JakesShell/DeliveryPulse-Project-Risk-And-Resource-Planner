@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Frontend",
+    "lead": "Sam Rivera",
+    "capacity": 91,
+    "members": 5,
+    "activeTasks": 18,
+    "overdueTasks": 3,
+    "recommendation": "Move one non-critical interface polish task to next sprint and focus on blocked integration work."
+  },
+  {
+    "name": "Backend",
+    "lead": "Priya Nair",
+    "capacity": 84,
+    "members": 4,
+    "activeTasks": 13,
+    "overdueTasks": 2,
+    "recommendation": "Prioritize API contract approval and schedule a focused dependency review."
+  },
+  {
+    "name": "QA",
+    "lead": "Grace Kim",
+    "capacity": 76,
+    "members": 4,
+    "activeTasks": 16,
+    "overdueTasks": 1,
+    "recommendation": "Reserve QA bandwidth for mobile claims and client portal regression testing."
+  },
+  {
+    "name": "Data",
+    "lead": "Nora Williams",
+    "capacity": 79,
+    "members": 6,
+    "activeTasks": 15,
+    "overdueTasks": 0,
+    "recommendation": "Maintain validation cadence and protect finance cutover review time."
+  },
+  {
+    "name": "Compliance",
+    "lead": "Avery Stone",
+    "capacity": 96,
+    "members": 3,
+    "activeTasks": 11,
+    "overdueTasks": 4,
+    "recommendation": "Add temporary reviewer support before control mapping blocks the reporting refresh."
+  },
+  {
+    "name": "Product",
+    "lead": "Mina Hart",
+    "capacity": 68,
+    "members": 5,
+    "activeTasks": 12,
+    "overdueTasks": 1,
+    "recommendation": "Product workload is stable. Accept redirected stakeholder update work if needed."
+  }
+]
